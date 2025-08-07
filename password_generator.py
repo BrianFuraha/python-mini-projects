@@ -42,8 +42,8 @@ while True:
   
   if min_length.isdigit():
     min_length = int(min_length)
-    has_number = input("Do you want to add numbers (y/n)? ").lower()
-    has_special = input("Do you want to add special characters (y/n)? ").lower()
+    has_number = input("Do you want to add numbers (y/n)? ").lower() == "y"
+    has_special = input("Do you want to add special characters (y/n)? ").lower() =="y"
     pwd = generate_password(min_length, has_number, has_special)
     print(pwd)
     break
